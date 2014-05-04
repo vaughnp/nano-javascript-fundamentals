@@ -9,17 +9,21 @@
     <h1>Vaughn is my name</h1>
     <h3>Count up, then back down</h3>
     <script>
-        z=8
-        for (i=1; i<2*z; i++)
+        for(var i=1; i<=5; i++)
         {
-            if (i>z)
+            for(var j=1; j<=i; j++)
             {
-                document.write(2*z-i+"<br/>")
+                document.write("*");
             }
-            else
+            document.write("<br/>");
+        }
+        for(var i=4; i>=1; i--)
+        {
+            for(var j=1; j<=i; j++)
             {
-                document.write(i+"<br/>")
+                document.write("*");
             }
+            document.write("<br/>");
         }
     </script>
 
