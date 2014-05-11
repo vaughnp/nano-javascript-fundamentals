@@ -6,6 +6,7 @@
 </head>
 <body>
     <h1>For Loops 2</h1>
+    <hi>My name is Vaughn.</h1>
     <h3>Print out the elements of a list</h3>
     <ul>
         <li>Try printing it out backwards</li>
@@ -16,10 +17,16 @@
     <script>
         var listOfNumbers = [1,2,3,4,5,6,7,8,9,10];
         var listOfWords = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth", "tenth", "eleventh", "twelfth", "thirteenth", "fourteenth", "fifteenth"];
+        var iceCreams = ["chocolate", "vanilla", "mint chocolate chip", "Lucas", "cookies n' cream"]
+        var listception = [listOfWords, listOfNumbers, iceCreams];
         // YOUR CODE HERE!
-        for(var i=0; i < listOfWords.length; i++)
+        for(var i=0; i < listception.length; i++)
         {
-            document.write(listOfWords[i]+" donut"+"<br/>");
+            var currentList = listception[i];
+            for (var j=0; j<currentList.length; j++)
+                {
+                    document.write(currentList[j]+"<br/>");
+                }        
         }
         // NICE!
     </script>
