@@ -1,0 +1,22 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>For Loops Multipication Table</title>
+</head>
+<body>
+    <h1>Souper Cool Multiplying Thingy</h1>
+    <h1>Vaughn is my name.</h1>
+    <script>
+        document.write('<table border="1" cellspacing="2" bordercolor="#000000" cellpadding="5">');
+            for (beep=0; beep<=12; beep++)
+                {
+                    document.write("<tr>"); 
+                    for (num=0; num<=12; num++)
+                        {
+                           document.write("<td>"+(beep*num)+"</td>")
+                        }
+                    document.write("</tr>")
+                }
+        document.write("</table>");
+    </script>
+</body>
